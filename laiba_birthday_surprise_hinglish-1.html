@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laiba ke liye ek chhota sa surprise 💗</title>
+<style>
+:root{--pink:#ff75ad;--deep:#a83270;--ink:#69334f;--soft:#fff4f9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at top,#fff 0,#ffe8f2 48%,#ffd3e5 100%);font-family:Georgia,serif;color:var(--ink);overflow-x:hidden}
+main{max-width:780px;margin:auto;padding:22px 15px 55px;text-align:center}
+.panel{background:#ffffffd9;border:1px solid #fff;border-radius:28px;padding:30px 20px;margin:15px 0;box-shadow:0 15px 40px #a8327018}
+.kicker{font:700 11px Arial;letter-spacing:2.5px;text-transform:uppercase;color:#c04d86}
+h1{font-size:clamp(38px,10vw,68px);line-height:1.06;color:var(--deep);margin:16px 0}
+h2{font-size:27px;color:var(--deep);margin:0 0 14px}
+p{font-size:18px;line-height:1.8;margin:12px auto;max-width:620px}
+.small{font:13px/1.65 Arial;color:#966a80}
+button{border:0;border-radius:999px;padding:14px 22px;margin:8px;background:linear-gradient(90deg,#ff78b2,#e94d91);color:#fff;font-weight:bold;font-size:15px;box-shadow:0 8px 18px #d94f8b35;cursor:pointer}
+button.alt{background:white;color:#a83270;border:1px solid #f0b5ce}
+.hidden{display:none!important}
+.big{font-size:48px;margin:12px}
+.pulse{animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.08);filter:drop-shadow(0 0 10px #ff8bb9)}}
+.progress{display:flex;justify-content:center;gap:7px;margin:15px}
+.dot{width:8px;height:8px;border-radius:50%;background:#f2b6d0}
+.dot.active{background:#d94f91;transform:scale(1.35)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:12px;margin-top:18px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:16px;border:4px solid white;box-shadow:0 5px 15px #8c42601c}
+input{max-width:100%;margin:8px;padding:9px;background:white;border:1px solid #efb5cf;border-radius:12px}
+.quote{background:#fff1f7;border-left:4px solid #ed83b1;padding:15px;border-radius:14px;font-style:italic}
+.heart{position:fixed;bottom:-30px;animation:float 7s linear forwards;pointer-events:none;z-index:5}
+@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+footer{font:13px Arial;color:#a56c86;padding:18px}
+</style>
+</head>
+<body>
+<main>
+ <section class="panel" id="intro">
+  <div class="kicker">Ek secret message sirf Laiba ke liye</div>
+  <div class="big pulse">💌</div>
+  <p class="small">RECIPIENT: MERI PYARI LAIBA</p>
+  <h1>Oye Laiba! 🥰</h1>
+  <p>Haan haan, tumhare liye hi hai! Aaj tumhara birthday hai aur kisi ne tumhare liye kuch special socha hai...</p>
+  <p>Par surprise itni aasani se thodi milega. Pehle thoda sa game khelna padega! 😌</p>
+  <button onclick="show('clue1')">Achha ji, dikhao kya hai! 👀</button>
+ </section>
+
+ <section class="panel hidden" id="clue1">
+  <div class="progress"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+  <div class="big">🧸🌸</div>
+  <h2>Clue number 1</h2>
+  <p>Ek aisi ladki hai jiske saath bachpan ki na jaane kitni yaadein judi hain...</p>
+  <p>Jiske saath hasi-mazaak bhi hai, nok-jhok bhi, kabhi faltu ki baatein aur kabhi bina kuch kahe sab samajh jaana bhi. ❤️</p>
+  <button onclick="show('clue2')">Hmm... aage batao 🤔</button>
+ </section>
+
+ <section class="panel hidden" id="clue2">
+  <div class="progress"><span class="dot active"></span><span class="dot active"></span><span class="dot"></span></div>
+  <div class="big">🤭💗</div>
+  <h2>Clue number 2</h2>
+  <p>Uske saath purani photos dekhkar hasi bhi aati hai aur sochkar achha bhi lagta hai ki yaar, kitna waqt beet gaya!</p>
+  <p>Chahe kitni bhi ladai ho jaaye, kuch rishte dil ke itne kareeb hote hain ki unki jagah koi nahi le sakta.</p>
+  <button onclick="show('clue3')">Ab toh naam bata do! 😂</button>
+ </section>
+
+ <section class="panel hidden" id="clue3">
+  <div class="progress"><span class="dot active"></span><span class="dot active"></span><span class="dot active"></span></div>
+  <div class="big">🥁🎀</div>
+  <h2>Last clue, madam!</h2>
+  <p>Woh ladki thodi cute hai, thodi drama queen, kabhi seedhi-saadhi aur kabhi itni funny ki bas... 😂</p>
+  <p>Aur haan, agle saal dulhan bhi banne wali hai! 👰🏻‍♀️💍</p>
+  <button onclick="show('reveal');celebrate()">Chalo ab surprise kholo! 🎁</button>
+ </section>
+
+ <section class="panel hidden" id="reveal">
+  <div class="kicker">Surprise unlocked!</div>
+  <div class="big pulse">🎉🎂🎀</div>
+  <h1>HAPPY BIRTHDAY<br>LAIBA! ❤️</h1>
+  <p>Surpriseee! 🥳 Tumhari childhood wali dost Richa ki taraf se dher saara pyaar!</p>
+  <p>Aaj ka din tumhare naam, toh smile karo aur cake ka ek bada sa piece meri taraf se bhi kha lena. 😂</p>
+  <button onclick="show('letter')">Ab meri baat bhi sun lo 💌</button>
+ </section>
+
+ <section class="panel hidden" id="letter">
+  <div class="big">💌</div>
+  <h2>Richa ki taraf se, dil se...</h2>
+  <p>Laiba, pata hi nahi chala kab bachpan ki chhoti-chhoti baatein itni saari yaadon mein badal gayin. Kabhi saath hasna, kabhi ek dusre ko pareshan karna, kabhi bina wajah baatein karte rehna... ye sab mere liye bahut special hai. 🥹</p>
+  <p>Main shayad har baar bol nahi paati, lekin tu meri life ke un logon mein se hai jinke hone se bahut kuch apna sa lagta hai.</p>
+  <p>Ab madam ki next year shaadi bhi hone wali hai! 😂💍 Nayi life, naye ghar aur nayi responsibilities aayengi. Bas ek baat yaad rakhna — dulhan banne ke baad apni purani dost ko bhool mat jaana. Calls aur gossip ka quota kam nahi hona chahiye! 🤣</p>
+  <p>Chahe life kitni bhi change ho jaaye, hamari dosti aur hamari pagalpan wali memories hamesha special rahengi.</p>
+  <p class="quote">"Kuch dost sirf zindagi ka hissa nahi hote, woh zindagi ki sabse pyaari yaadon ka hissa hote hain." 💗</p>
+  <p>Hamesha khush reh, khoob tarakki kar, tere saare sapne poore hon. Tujhe duniya ki saari khushiyan milein. Happy Birthday once again, meri Laiba! ❤️</p>
+  <p><b>Lots of love,<br>Richa 🫶</b></p>
+  <button onclick="show('memories')">Chalo ab yaadein dekhte hain 📸</button>
+ </section>
+
+ <section class="panel hidden" id="memories">
+  <div class="big">📸🌷</div>
+  <h2>Humari yaadon ka pitara</h2>
+  <p>Ab yahan lagengi hum dono ki favourite photos! Jo photos dekhkar kabhi hasi aaye aur kabhi lage — yaar, kya din the! 🥹❤️</p>
+  <p class="small">Apne phone se 3–5 photos select karo. Ye abhi tumhare browser mein preview hongi. Public website par dikhane ke liye in photos ko bhi GitHub project mein upload karna hoga.</p>
+  <input id="photos" type="file" accept="image/*" multiple>
+  <div class="gallery" id="gallery"><p class="small">Photos select karte hi yahan dikhengi 💕</p></div>
+  <button onclick="show('final')">Ek aakhri message bhi hai ✨</button>
+ </section>
+
+ <section class="panel hidden" id="final">
+  <div class="big pulse">🦋🌷💗</div>
+  <h2>Ek aakhri baat, birthday girl!</h2>
+  <p>Life ke har naye chapter mein tujhe dher saara pyaar, sukoon, hasi aur khushiyan milein. Jo bhi sapne dekhe hain, sab poore hon.</p>
+  <p>Aur haan, shaadi ke baad bhi jab kabhi bachpan yaad aaye na, toh apni Richa ko call kar lena. Purani wali bakwaas abhi bahut baaki hai! 😂</p>
+  <h1 style="font-size:42px">Love you, Laiba! ❤️</h1>
+  <p>Janamdin mubarak ho! 🎂</p>
+  <button onclick="celebrate()">Virtual hug bhejo 🤗</button>
+  <button class="alt" onclick="window.scrollTo({top:0,behavior:'smooth'})">Surprise phir se dekho ↺</button>
+ </section>
+ <footer>Made with lots of love, thodi si masti aur dher saari yaadein · Richa for Laiba 💗</footer>
+</main>
+<script>
+function show(id){document.getElementById(id).classList.remove('hidden');document.getElementById(id).scrollIntoView({behavior:'smooth',block:'center'});}
+function celebrate(){for(let i=0;i<42;i++){const h=document.createElement('span');h.className='heart';h.textContent=['💗','💕','✨','🌸','🎀','🥳'][i%6];h.style.left=Math.random()*100+'vw';h.style.animationDelay=Math.random()*1.8+'s';h.style.fontSize=16+Math.random()*22+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),8000)}}
+document.getElementById('photos').addEventListener('change',function(e){const g=document.getElementById('gallery');g.innerHTML='';[...e.target.files].slice(0,5).forEach(f=>{const im=document.createElement('img');im.alt='Richa aur Laiba ki yaad';im.src=URL.createObjectURL(f);g.appendChild(im)})});
+</script>
+</body>
+</html>
